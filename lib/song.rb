@@ -3,10 +3,12 @@ class Song
   
   @@count = 0 
   @@genre_array = [] 
+  @@artist_array = []
   
   def initialize(name, artist, genre)
     @name = name 
     @artist = artist
+    @@artist_array << @artist 
     @genre = genre 
     @@genre_array << @genre 
     @@count += 1 
@@ -18,6 +20,10 @@ class Song
   
   def self.genres
     @@genre_array.uniq
+  end
+  
+  def self.artists 
+    @@artists.uniq 
   end
     
   
