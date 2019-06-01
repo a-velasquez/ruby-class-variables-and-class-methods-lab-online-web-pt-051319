@@ -3,12 +3,12 @@ class Song
   
   @@count = 0 
   @@genre_array = [] 
-  @@artist_array = []
+  @@artists = []
   
   def initialize(name, artist, genre)
     @name = name 
     @artist = artist
-    @@artist_array << @artist 
+    @@artists << @artist 
     @genre = genre 
     @@genre_array << @genre 
     @@count += 1 
