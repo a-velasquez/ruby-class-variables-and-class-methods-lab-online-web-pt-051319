@@ -16,8 +16,8 @@ class Song
     @@count
   end 
   
-  def self.genres  
-    @@genre_array
+  def self.genres
+    @@genre_array.uniq
   end
     
   
